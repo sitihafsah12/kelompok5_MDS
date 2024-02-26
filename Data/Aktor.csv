@@ -1,0 +1,210 @@
+id_aktor,id_film,nama_aktor
+20001,10001,Bene Dion Rajagukguk
+20002,10001,Oki Rengga
+20003,10001,Indra Jegel
+20004,10001,Boris Bokir
+20005,10002,Laura Basuki
+20006,10002,Juan Bione Subiantoro
+20007,10002,Della Dartyan
+20008,10002,Kristo Immanuel
+20009,10003,Tara Basro
+20010,10003,Bront Palarae
+20011,10003,Dimas Aditya
+20012,10003,Endy Arfian
+20013,10004,Shenina Cinnamon
+20014,10004,Dea Panendra
+20015,10004,Giulio Parengkuan
+20016,10004,Jerome Kurnia
+20017,10005,Arswendy Bening Swara
+20018,10005,Tika Panggabean
+20004,10005,Boris Bokir
+20019,10005,Ghita Bhebhita
+20020,10006,Ringgo Agus Rahman
+20021,10006,Nirina Zubir
+20022,10006,Alex Abbad
+20023,10006,Sheila Dara Aisha
+20024,10006,Upi Avianto
+20025,10007,Pevita Pearce
+20026,10007,Ario Bayu
+20027,10007,Christine Hakim
+20028,10007,Jefri Nichol
+20029,10008,Vino G. Bastian
+20030,10008,Graciella Abigail
+20031,10008,Mawar Eva de Jongh
+20032,10008,Indro Warkop
+20033,10009,Iqbaal Dhiafakhri Ramadhan
+20034,10009,Angga Yunanda
+20035,10009,Rachel Amanda
+20036,10009,Umay Shahab
+20037,10010,Adhisty Zara
+20034,10010,Angga Yunanda
+20039,10010,Cut Mini Theo
+20017,10010,Arswendy Bening Swara
+20038,10011,Dian Sastrowardoyo
+20040,10011,Nicholas Saputra
+20041,10011,Ladya Cheryl
+20042,10011,Titi Kamal
+20043,10012,Clara Bernadeth
+20044,10012,Baskara Mahendra
+20045,10012,Oka Antara
+20046,10012,Josephine Firmstone
+20047,10012,Rudy Soedjarwo
+20040,10013,Nicholas Saputra
+20048,10013,Ariel Tatum
+20049,10013,Iwa K.
+20050,10013,Poppy Sovia
+20048,10014,Arawinda Kirana
+20049,10014,Asmara Abigail
+20050,10014,Sekar Sari
+20051,10014,Marissa Anita
+20052,10015,Jessica Mila
+20053,10015,Reza Rahadian
+20054,10015,Yasmin Napper
+20055,10015,Karina Suwandhi
+20021,10016,Nirina Zubir
+20020,10016,Ringgo Agus Rahman
+20037,10016,Adhisty Zara
+20056,10016,Widuri Sasono
+20029,10017,Vino G. Bastian
+20057,10017,Adipati Dolken
+20052,10017,Jessica Mila
+20058,10017,Denny Sumargo
+20059,10018,Ernest Prakasa
+20060,10018,Kin Wah Chew
+20061,10018,Gisella Anastasia
+20062,10018,Dion Wiyoko
+20063,10019,Meira Anastasia
+20059,10019,Ernest Prakasa
+20005,10019,Laura Basuki
+20060,10019,Kin Wah Chew
+20062,10019,Dion Wiyoko
+20034,10020,Angga Yunanda
+20065,10020,Putri Marino
+20066,10020,Slamet Rahardjo
+20067,10020,Ira Wibowo
+20068,10021,Herjunot Ali
+20069,10021,Raline Shah
+20070,10021,Fedi Nuril
+20025,10021,Pevita Pearce
+20053,10022,Reza Rahadian
+20071,10022,Bunga Citra Lestari
+20060,10022,Kin Wah Chew
+20072,10022,Atikah Suhaime
+20073,10023,Marsha Timothy
+20020,10023,Ringgo Agus Rahman
+20074,10023,Donny Damara
+20075,10023,Hanggini
+20076,10024,Riri Riza
+20040,10024,Nicholas Saputra
+20038,10024,Dian Sastrowardoyo
+20042,10024,Titi Kamal
+20077,10024,Adinia Wirasti
+20038,10025,Dian Sastrowardoyo
+20040,10025,Nicholas Saputra
+20078,10025,Hannah Al Rashid
+20045,10025,Oka Antara
+20106,10026,Tatjana Saphira
+20107,10026,Ge Pamungkas
+20108,10026,Deva Mahendra
+20059,10026,Ernest Prakasa
+20040,10027,Nicholas Saputra
+20109,10027,Jonathan Mulia
+20110,10027,Thomas Nawilis
+20111,10027,Christian Audi
+20053,10028,Reza Rahadian
+20071,10028,Bunga Citra Lestari
+20079,10028,Tio Pakusadewo
+20112,10028,Ratna Riantiarno
+20106,10029,Tatjana Saphira
+20108,10029,Deva Mahenra
+20113,10029,Widyawati
+20012,10029,Endy Arfian
+20114,10030,Bayu Skak
+20115,10030,Cut Meyriska
+20116,10030,Brandon Salim
+20117,10030,Joshua Suherman
+20040,10031,Nicholas Saputra
+20118,10031,Mariana Renata
+20119,10031,Rachel Maryam Sayidina
+20120,10031,Surya Saputra
+20071,10032,Bunga Citra Lestari
+20053,10032,Reza Rahadian
+20022,10032,Alex Abbad
+20010,10032,Bront Palarae
+20080,10033,Angga Dwimas Sasongko
+20081,10033,Julie Estelle
+20079,10033,Tio Pakusadewo
+20082,10033,Rio Dewanto
+20083,10033,Widyawati
+20084,10034,Ravi L. Bharwani
+20085,10034,Raihaanun
+20086,10034,Lukman Sardi
+20026,10034,Ario Bayu
+20087,10034,Verdi Solaiman
+20088,10035,Deddy Mizwar
+20089,10035,Syifa Hadju
+20036,10035,Umay Shahab
+20091,10035,Edbert Destiny
+20029,10036,Vino G. Bastian
+20090,10036,Luna Maya
+20092,10036,Ananda Omesh
+20093,10036,Estelle Linden
+20065,10037,Putri Marino
+20057,10037,Adipati Dolken
+20094,10037,Gritte Agatha
+20095,10037,Chicco Kurniawan
+20096,10038,Donny Alamsyah
+20097,10038,Fachry Albar
+20026,10038,Ario Bayu
+20098,10038,Fahrani
+20087,10039,Verdi Solaiman
+20099,10039,Tissa Biani Azzahra
+20100,10039,Violla Georgie
+20101,10039,Ajil Ditto
+20102,10039,Clairine Clay
+20103,10040,Rano Karno 
+20104,10040,Maudy Koesnaedi
+20105,10040,Cornelia Agatha
+20147,10040,Mandra
+20053,10041,Reza Rahadian
+20085,10041,Raihaanun
+20121,10041,Anya Geraldine
+20099,10042,Tissa Biani Azzahra
+20122,10042,Adinda Thomas
+20123,10042,Achmad Megantara
+20124,10043,Ardhito Pramono
+20125,10043,Lutesha
+20095,10043,Chicco Kurniawan
+20082,10043,Rio Dewanto
+20126,10043,Ganindra Bimo
+20038,10044,Dian Sastrowardoyo
+20053,10044,Reza Rahadian
+20077,10044,Adinia Wirasti
+20127,10044,Ayushita
+20027,10044,Christine Hakim
+20128,10045,Abimana Aryasatya
+20009,10045,Tara Basro
+20010,10045,Bront Palarae
+20026,10045,Ario Bayu
+20086,10045,Lukman Sardi
+20129,10046,Natasha Wilona
+20130,10046,Ria Ricis
+20131,10046,Al Ghazali
+20132,10046,Fitria Rasyidi
+20133,10046,Ryma
+20134,10047,Indah Permatasari
+20135,10047,Refal Hady
+20136,10047,Aghniny Haque
+20137,10047,Jeff Smith
+20138,10048,Muhammad Khan
+20139,10048,Raditya Evandra
+20140,10048,Rianto
+20141,10048,Sujiwo Tejo
+20142,10049,Safira Ratu Sofya
+20143,10049,Kesha Alvaro
+20144,10049,Ariyo Wahab
+20145,10049,Nayla D.
+20039,10050,Cut Mini
+20086,10050,Lukman Sardi
+20069,10050,Raline Shah
+20146,10050,Derbi Romero
