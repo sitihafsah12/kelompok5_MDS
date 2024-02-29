@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1000" height="300" src="image/doc/Logo(20197 x 10335 piksel).png">
+  <img width="1000" height="300" src="doc/Logo(20197 x 10335 piksel).png">
 </p>
 
 <div align="justify">
