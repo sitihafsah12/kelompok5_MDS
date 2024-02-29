@@ -4,13 +4,13 @@
 
 <div align="justify">
 Sering galau mau nonton film apa karena takut filmnya tidak sesuai ekspektasi? udahhh tenang aja, INMOVIE jawabannya! 
-Semua informasi penting tentang karya sinematik indonesai sudah terangkum disini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! 
+Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! 
 
 
-**Apa Itu INMOVIE?**
-INMOVIE: Indonesian Movies Database adalah sistem yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, produser, tanggal rilis, genre, sinopsis, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum produksi film.
+**Apa itu INMOVIE?**
+INMOVIE: Indonesian Movies Database adalah sistem yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, tanggal rilis, genre, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum film.
 
-**Apa Saja yang Ditemui dalam Database Film?**
+**Apa saja yang ditemui dalam  INMOVIE?**
 
 **Informasi Film**: Data utama tentang judul film, aktor, sutradara.
 
