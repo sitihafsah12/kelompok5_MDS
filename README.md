@@ -20,8 +20,6 @@ INMOVIE: Indonesian Movies Database adalah sistem yang diciptakan untuk merinci 
 
 **Genre**: Kategori atau jenis film yang dapat membantu penonton memilih sesuai selera.
 
-**Penghargaan dan Nominasi**: Prestasi dan pengakuan yang diterima oleh film.
-
 **Penggunaan INMOVIE**
 
 1. **Penonton**: Memberikan referensi untuk memilih film sesuai dengan preferensi.
