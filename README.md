@@ -3,18 +3,18 @@
 </p>
 
 <div align="justify">
-Ingin mengeksplorasi dan menggali lebih dalam tentang dunia film yang begitu dinamis? Memahami keseimbangan antara seni dan industri film? Maka, Database Film adalah jawabannya! Dalam era di mana hiburan audiovisual mendominasi, database film menjadi tulang punggung bagi industri kreatif ini, menyimpan dan menyajikan informasi penting tentang setiap karya sinematik.
+Sering galau mau nonton film apa karena takut filmnya tidak sesuai ekspektasi? udahhh tenang aja, INMOVIE jawabannya! 
+Semua informasi penting tentang karya sinematik indonesai sudah terangkum disini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! 
 
-**Apa Itu Database Film?**
-Database film adalah sistem yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, produser, tanggal rilis, genre, sinopsis, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum produksi film.
+
+**Apa Itu INMOVIE?**
+INMOVIE: Indonesian Movies Database adalah sistem yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, produser, tanggal rilis, genre, sinopsis, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum produksi film.
 
 **Apa Saja yang Ditemui dalam Database Film?**
 
-**Informasi Film**: Data utama tentang judul film, sutradara, produser, pemeran, dan kru.
+**Informasi Film**: Data utama tentang judul film, aktor, sutradara.
 
-**Sinopsis**: Ikhtisar cerita untuk memberikan gambaran kepada penonton.
-
-**Ulasan dan Peringkat**: Pengalaman penonton dan penilaian kritikus.
+**Ulasan dan Peringkat**: Komentar dan penilaian kritikus.
 
 **Tanggal Rilis**: Kapan film ini pertama kali hadir di layar lebar.
 
@@ -22,27 +22,17 @@ Database film adalah sistem yang diciptakan untuk merinci dan mengorganisir info
 
 **Penghargaan dan Nominasi**: Prestasi dan pengakuan yang diterima oleh film.
 
-**Data Produksi**: Informasi teknis seperti anggaran dan lokasi syuting.
+**Penggunaan INMOVIE**
 
-**Trailer dan Klip**: Potongan-potongan visual untuk memberikan gambaran kepada penonton.
+1. **Penonton**: Memberikan referensi untuk memilih film sesuai dengan preferensi.
+2. **Analisis Tren**: Mengetahui 5 film terbaik berdasarkan rating.
 
-**Statistik Kinerja**: Data keuangan dan performa box office.
-
-**Platform Penyiaran**: Ketersediaan film di berbagai layanan streaming.
-
-**Penggunaan Database Film dalam Industri:**
-
-1. **Produksi**: Membantu produser dan sutradara dalam perencanaan dan pengelolaan proyek.
-2. **Distribusi**: Menentukan strategi pemasaran berdasarkan analisis data pasar.
-3. **Penonton**: Memberikan referensi untuk memilih film sesuai dengan preferensi.
-4. **Analisis Tren**: Melacak keberhasilan atau kegagalan konsep dan genre tertentu.
-5. **Platform Streaming**: Merekomendasikan film berdasarkan riwayat penonton.
 
 **Kami Mengajak Anda ke Dunia Film!**
-Dengan kurikulum yang mendalam, Jurusan Database Film kami dirancang untuk mengeksplorasi setiap aspek dari produksi film hingga interaksi penonton. Bergabunglah dengan kami, pelajari seni dan ilmu di balik layar lebar, dan siapkan diri Anda untuk berkontribusi dalam dunia hiburan yang penuh warna.
+Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelajah film-film yang berkualitas. mencari, menilai, dan memilih film memang menarik namun tak kalah melelahkan. INMOVIE dirancang untuk membantu mengeksplorasi setiap aspek dari produksi film hingga interaksi penonton. Siapkan diri Anda untuk berpetualang dalam dunia film yang penuh warna bersama INMOVIE.
 
 ## INFO
-**FilmHub** adalah portal informasi terkait database film dari berbagai studio dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. Temukan lebih banyak di [FilmHub](https://www.filmhub.com).
+**INMOVIE** adalah portal informasi terkait database film dari berbagai studio dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. Temukan lebih banyak di [FilmHub](https://www.filmhub.com).
 
 ## Dashboard Database
 <p align="center">
@@ -59,7 +49,7 @@ Dengan kurikulum yang mendalam, Jurusan Database Film kami dirancang untuk menge
 
 
 ## Deskripsi Data
-FilmHub adalah sumber terpercaya untuk mendapatkan informasi lengkap tentang film-film terkemuka. Data yang kami sajikan mencakup detail film, ulasan, pemain, dan semua informasi penting lainnya. Dengan menggabungkan keahlian dalam teknologi informasi dan kecintaan kami pada dunia film, kami berkomitmen untuk menyediakan pengalaman eksplorasi film yang tak tertandingi.
+INMOVIE adalah sumber terpercaya untuk mendapatkan informasi lengkap tentang film-film terkemuka. Data yang kami sajikan mencakup detail film, ulasan, pemain, dan semua informasi penting lainnya. Dengan menggabungkan keahlian dalam teknologi informasi dan kecintaan kami pada dunia film, kami berkomitmen untuk menyediakan pengalaman eksplorasi film yang tak tertandingi.
 
 ## Tim Pengembang
 + Database Manager : [Eka Dicky Darmawan Yanuari](https://github.com/EkaDickyDarmawanYanuari) (G1501231088)
