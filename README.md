@@ -4,11 +4,11 @@
 
 <div align="justify">
 Sering galau mau nonton film apa karena takut filmnya tidak sesuai ekspektasi? udahhh tenang aja, INMOVIE jawabannya! 
-Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! 
+Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! it's time to dive into films!
 
 
 **Apa itu INMOVIE?**
-INMOVIE: Indonesian Movies Database adalah sistem yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, tanggal rilis, genre, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum film.
+INMOVIE adalah database film Indonesia Database sistem yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, tanggal rilis, genre, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum film.
 
 **Apa saja yang ditemui dalam  INMOVIE?**
 
@@ -26,8 +26,8 @@ INMOVIE: Indonesian Movies Database adalah sistem yang diciptakan untuk merinci 
 2. **Analisis Tren**: Mengetahui 5 film terbaik berdasarkan rating.
 
 
-**Kami Mengajak Anda ke Dunia Film!**
-Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelajah film-film yang berkualitas. mencari, menilai, dan memilih film memang menarik namun tak kalah melelahkan. INMOVIE dirancang untuk membantu mengeksplorasi setiap aspek dari produksi film hingga interaksi penonton. Siapkan diri Anda untuk berpetualang dalam dunia film yang penuh warna bersama INMOVIE.
+**Kami Mengajak Anda menyelam ke Dunia Film!**
+Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelajah film-film yang berkualitas. Mencari, menilai, dan memilih film memang menarik namun tak kalah melelahkan. INMOVIE dirancang untuk membantu mengeksplorasi dan menyelami setiap aspek dari produksi film hingga interaksi penonton. Siapkan diri Anda untuk berpetualang dalam dunia film yang penuh warna bersama INMOVIE.
 
 ## INFO
 **INMOVIE** adalah portal informasi terkait database film dari berbagai studio dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. Temukan lebih banyak di [FilmHub](https://www.filmhub.com).
