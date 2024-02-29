@@ -1,0 +1,79 @@
+# data model segments
+
+
+
+# Tables and columns
+
+- table: Film
+  segment: *md
+  display: accent1
+  columns:
+    id_film: { type: int, key: yes }
+    id_sutradara: { type: int }
+    judul_film: { type: varchar }
+    tahun_rilis: { type: int }
+    durasi_film: { type: varchar }
+    genre_film: { type: varchar }
+    votes: { type: int }
+    rating: { type: varchar }
+  additional_columns:
+    - column: Type
+      properties: varchar
+
+- table: aktor
+  segment: *md
+  display: accent1
+  columns:
+    id_aktor: { type: int, key: yes }
+    nama_aktor: { type: varchar }
+  additional_columns:
+    - column: Type
+      properties: varchar
+
+- table: sutradara
+  segment: *md
+  display: accent1
+  columns:
+    id_sutradara: { type: int, key: yes }
+    id_film: { type: int, fkey: yes, ref: Film }
+    nama_sutradara: { type: varchar }
+    tahun_rilis: { type: int }
+  relationships:
+    - table: Film
+      type: one-to-one
+      description: "one sutradara has one film"
+  additional_columns:
+    - column: Type
+      properties: varchar
+
+- table: Reviews
+  segment: *tran
+  display: accent1
+  columns:
+    id_user: { type: int, key: yes }
+    id_film: { type: int, fkey: yes, ref: Film }
+    nama_user: { type: varchar }
+    tanggal_user: { type: varchar }
+    isi_user: { type: varchar }
+  relationships:
+    - table: Film
+      type: many-to-many
+      description: "Many ulasan have one film"
+  additional_columns:
+    - column: Type
+      properties: varchar
+
+- table: aktor_film
+  segment: *md
+  display: accent1
+  columns:
+    id_aktor_film: { type: int, key: yes }
+    id_film: { type: int, fkey: yes, ref: Film }
+    id_aktor: { type: int, fkey: yes, ref: aktor }
+  relationships:
+    - table: Film
+      type: many-to-many
+      description: "Many aktor have many films"
+  additional_columns:
+    - column: Type
+      properties: varchar
