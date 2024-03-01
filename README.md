@@ -34,7 +34,7 @@ Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelaj
 
 ## Dashboard Database
 <p align="center">
-  <img width="850" height="500" src="image/FilmHub_Dashboard.png">
+  <img width="850" height="500" src="doc/WhatsApp Image 2024-03-01 at 07.59.54_3991ab85.jpg">
 </p>
 
 ## Skema Database
