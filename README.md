@@ -39,7 +39,7 @@ Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelaj
 
 ## Skema Database
 <p align="center">
-  <img width="850" height="500" src="image/FilmHub_Schema.png">
+  <img width="850" height="500" src="doc/skema.png">
 </p>
 
 ## ERD
