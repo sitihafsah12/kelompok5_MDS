@@ -30,7 +30,7 @@ it's time to dive into films!
 Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelajah film-film yang berkualitas. Mencari, menilai, dan memilih film memang menarik namun tak kalah melelahkan. INMOVIE dirancang untuk membantu mengeksplorasi dan menyelami setiap aspek dari produksi film hingga interaksi penonton. Siapkan diri Anda untuk berpetualang dalam dunia film yang penuh warna bersama INMOVIE.
 
 ## INFO
-**INMOVIE** adalah portal informasi terkait database film dari berbagai studio dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. Temukan lebih banyak di [FilmHub](https://www.filmhub.com).
+**INMOVIE** adalah portal informasi terkait database film dari berbagai studio dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. 
 
 ## Dashboard Database
 <p align="center">
