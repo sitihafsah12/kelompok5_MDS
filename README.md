@@ -13,13 +13,13 @@ it's time to dive into films!
 
 **Apa saja yang ditemui dalam INMOVIE?**
 
-**Informasi Film**: Data utama tentang judul film, aktor, sutradara.
+  **Informasi Film**: Data utama tentang judul film, aktor, sutradara.
 
-**Ulasan dan Peringkat**: Komentar dan penilaian kritikus.
+  **Ulasan dan Peringkat**: Komentar dan penilaian kritikus.
 
-**Tanggal Rilis**: Kapan film ini pertama kali hadir di layar lebar.
+  **Tanggal Rilis**: Kapan film ini pertama kali hadir di layar lebar.
 
-**Genre**: Kategori atau jenis film yang dapat membantu penonton memilih sesuai selera.
+  **Genre**: Kategori atau jenis film yang dapat membantu penonton memilih sesuai selera.
 
 **Penggunaan INMOVIE**
 
