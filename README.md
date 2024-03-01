@@ -10,7 +10,8 @@ Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sin
 **Apa itu INMOVIE?**
 INMOVIE adalah sistem database film Indonesia yang diciptakan untuk merinci dan mengorganisir informasi terkait film, seperti daftar pemeran, sutradara, tanggal rilis, genre, dan lebih banyak lagi. Ini adalah perpustakaan digital yang menyediakan akses cepat dan efisien ke seluruh spektrum film.
 it's time to dive into films!
-**Apa saja yang ditemui dalam  INMOVIE?**
+
+**Apa saja yang ditemui dalam INMOVIE?**
 
 **Informasi Film**: Data utama tentang judul film, aktor, sutradara.
 
