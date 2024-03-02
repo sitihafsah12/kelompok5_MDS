@@ -14,7 +14,7 @@
 •
 [Dokumentasi](#blue_book-dokumentasi)
 
-<div align="justify">
+</div>
 Sering galau mau nonton film apa karena takut filmnya tidak sesuai ekspektasi? udahhh tenang aja, INMOVIE jawabannya! 
 Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! it's time to dive into films!
 
