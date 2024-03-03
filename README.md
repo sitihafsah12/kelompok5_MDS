@@ -91,7 +91,7 @@ Menggambarkan struktur *primary key* **film**, **aktor**, **sutradara**, **revie
 ## :rotating_light: ERD
 ERD (Entity Relationship Diagram) menampilkan hubungan antara entitas dengan atribut.
 
-<p align="center" style="width: 800px; height: 200px;">
+<p align="center" style="wdoc/ERD FILM.png">
   <img width="200" height="200" src="image/ERD.png">
 </p>
 
