@@ -92,7 +92,7 @@ Menggambarkan struktur *primary key* **film**, **aktor**, **sutradara**, **revie
 ERD (Entity Relationship Diagram) menampilkan hubungan antara entitas dengan atribut.
 
 <p align="center" style="wdoc/ERD FILM.png">
-  <img width="1000" height="600" src="doc/ERD FILM.png">
+  <img width="1000" height="650" src="doc/ERD FILM.png">
 </p>
 
 ## :heavy_check_mark: Deskripsi Data
