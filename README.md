@@ -213,34 +213,6 @@ CREATE TABLE IF NOT EXISTS public.reviews (
 SELECT * FROM reviews;
 ```
 
-### Create Table Aktor_Film
-Berikut deskripsi untuk setiap tabel Aktor_Film.
-| Attribute                  | Type                  | Description                     		       |
-|:---------------------------|:----------------------|:------------------------------------------------|
-| id_aktor_film              | integer 	    	     | Id Aktor Film                       	       |
-| id_film                    | integer               | Id Film                 			       |
-| id_aktor                   | integer               | Id Aktor               |	
-
-dengan script SQL sebagai berikut:              
-```sql
-CREATE TABLE IF NOT EXISTS public.aktor_film (
-    id_aktor_film SERIAL PRIMARY KEY,
-    id_film int NOT NULL,
-    id_aktor int NOT NULL,
-    CONSTRAINT aktor_film_id_aktor_fkey FOREIGN KEY (id_aktor)
-        REFERENCES public.aktor (id_aktor) MATCH SIMPLE
-        ON UPDATE NO ACTION
-        ON DELETE NO ACTION,
-    CONSTRAINT aktor_film_id_film_fkey FOREIGN KEY (id_film)
-        REFERENCES public.film (id_film) MATCH SIMPLE
-        ON UPDATE NO ACTION
-        ON DELETE NO ACTION
-);
-
-
-SELECT * FROM aktor_film;
-```
-
 ## :open_file_folder: Struktur Folder
 
 ```
