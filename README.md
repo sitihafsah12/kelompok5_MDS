@@ -84,7 +84,7 @@ Dokumentasi penggunaan aplikasi database. Anda dapat juga membuat dokumentasi li
 Menggambarkan struktur *primary key* **film**, **aktor**, **sutradara**, **reviews** dan **aktor-film** dengan masing-masing *foreign key* dalam membangun relasi antara tabel atau entitas.
 
 <p align="center" style="width: 800px; height: 200px;">
-  <img width="1000" height="300" src="doc/skema.png">
+  <img width="1000" height="400" src="doc/skema.png">
 </p>
 
 
@@ -92,7 +92,7 @@ Menggambarkan struktur *primary key* **film**, **aktor**, **sutradara**, **revie
 ERD (Entity Relationship Diagram) menampilkan hubungan antara entitas dengan atribut.
 
 <p align="center" style="wdoc/ERD FILM.png">
-  <img width="200" height="200" src="doc/ERD FILM.png">
+  <img width="1000" height="400" src="doc/ERD FILM.png">
 </p>
 
 ## :heavy_check_mark: Deskripsi Data
