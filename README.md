@@ -16,7 +16,7 @@
 
 </div>
 Sering galau mau nonton film apa karena takut filmnya tidak sesuai ekspektasi? udahhh tenang aja, INMOVIE jawabannya! 
-Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! it's time to dive into films!
+Semua informasi penting tentang karya sinematik Indonesia sudah terangkum di sini. Butuh informasi tentang aktor, sutradara, atau bahkan ulasan? Ada! 
 
 
 **Apa itu INMOVIE?**
@@ -40,7 +40,7 @@ it's time to dive into films!
 
 
 **Kami Mengajak Anda menyelam ke Dunia Film!**
-Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelajah film-film yang berkualitas. Mencari, menilai, dan memilih film memang menarik namun tak kalah melelahkan. INMOVIE dirancang untuk membantu mengeksplorasi dan menyelami setiap aspek dari produksi film hingga interaksi penonton. Siapkan diri Anda untuk berpetualang dalam dunia film yang penuh warna bersama INMOVIE.
+Dunia film akan selalu menarik dan dinamis, tak heran para pecinta cinematografi selalu kehausan menjelajah film-film yang berkualitas. Mencari, menilai, dan memilih film memang menarik namun tak kalah melelahkan serta menyita waktu. INMOVIE dirancang untuk membantu mengeksplorasi dan menyelami setiap aspek dari produksi film hingga interaksi penonton. Siapkan diri Anda untuk berpetualang dalam dunia film yang penuh warna bersama INMOVIE.
 
 </div>
 
@@ -58,7 +58,7 @@ Dunia film akan selalu menarik dan dinamis, tak heran penonton kehausan menjelaj
 - [Tim Pengembang](#smiley_cat-tim-pengembang)
 
 ## INFO
-**INMOVIE** adalah portal informasi terkait database film dari berbagai studio dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. 
+**INMOVIE** adalah portal informasi terkait database film dari berbagai genre dan produksi film. Kami menyajikan data yang akurat dan terkini tentang film-film terkemuka, membantu Anda menjelajahi dan menemukan karya sinematik yang sesuai dengan selera Anda. 
 
 
 ## Dashboard Database
@@ -96,10 +96,10 @@ ERD (Entity Relationship Diagram) menampilkan hubungan antara entitas dengan atr
 </p>
 
 ## :heavy_check_mark: Deskripsi Data
-INMOVIE adalah sumber terpercaya untuk mendapatkan informasi lengkap tentang film-film terkemuka. Data yang kami sajikan mencakup detail film, ulasan, pemain, dan semua informasi penting lainnya. Dengan menggabungkan keahlian dalam teknologi informasi dan kecintaan kami pada dunia film, kami berkomitmen untuk menyediakan pengalaman eksplorasi film yang tak tertandingi.Berisi tentang tabel-tabel yang digunakan berikut dengan sintaks SQL DDL (CREATE).
+INMOVIE adalah sumber terpercaya untuk mendapatkan informasi lengkap tentang film-film terkemuka. Data yang kami sajikan mencakup detail film, ulasan, pemain, dan semua informasi penting lainnya. Dengan menggabungkan keahlian dalam teknologi informasi dan kecintaan kami pada dunia film, kami berkomitmen untuk menyediakan pengalaman eksplorasi film yang tak tertandingi. Data yang disajikan berisi tentang tabel-tabel yang digunakan berikut dengan sintaks SQL DDL (CREATE).
 
 ### Create Database
-Databse INMOVIES menyimpan informasi yang mewakili atribut data yang saling berhubungan untuk kemudian dianalisis.
+Database INMOVIES menyimpan informasi yang mewakili atribut data yang saling berhubungan untuk kemudian dianalisis.
 ```sql
 CREATE DATABASE film_indo
     WITH
@@ -109,7 +109,7 @@ CREATE DATABASE film_indo
     IS_TEMPLATE = False;
 ```
 ### Create Table film
-Table film memberikan informasi kepada user mengenai identitas film novel Indonesia, sehingga user dapat mengetahui id film, nama sutradara, judul film, tahun rilis, genre, votes dan rating. Id film adalah kode yang digunakan untuk membedakan judul film yang sama pada tiap film. Berikut deskripsi untuk setiap tabel penulis.
+Table film memberikan informasi kepada user mengenai identitas film Indonesia, sehingga user dapat mengetahui id film, nama sutradara, judul film, tahun rilis, genre, votes dan rating. Id film adalah kode yang digunakan untuk membedakan judul film yang sama pada tiap film. Berikut deskripsi untuk setiap tabel penulis.
 | Attribute          | Type                  | Description                     |
 |:-------------------|:----------------------|:------------------------|
 | id_film            | varchar(200)          | Id film                 |
@@ -141,7 +141,7 @@ SELECT * FROM film;
 );
 ```
 ### Create Table Aktor
-Table aktor memberikan informasi yang memudahkan user mengetahui informasi dari nama aktor film Indonesia tersebut melalui id aktor dan nama aktor yang memainkan film. Id aktor adalah kode yang digunakan untuk membedakan nama aktor yang sama pada tiap film. Berikut deskripsi untuk setiap tabel penerbit.
+Table aktor memberikan informasi yang memudahkan user mengetahui informasi nama-nama aktor yang terlibat dalam film Indonesia tersebut melalui id aktor dan nama aktor yang memainkan film. Id aktor adalah kode yang digunakan untuk membedakan nama aktor yang sama pada tiap film. Berikut deskripsi untuk setiap tabel penerbit.
 | Attribute          | Type                  | Description                     	|
 |:-------------------|:----------------------|:---------------------------------|
 | id_aktor           | int		     | Id Aktor			       	|
@@ -183,7 +183,7 @@ SELECT * FROM sutradara;
 ```
 
 ### Create Table Reviews
-Table Reviews menyajikan informasi lengkap mengenai informasi Reviews dari para penonton film. Selain dapat mengetahui judul, user juga akan mendapatkan informasi doi dan tahun terbit sebuah film. Nama aktor, nama sutradara hingga urutan aktor tersaji pada table ini. Tidak hanya itu, akan ditampilkan pula nama sutradara yang menyutradarakan film. Lebih lanjut, Berikut deskripsi untuk setiap tabel reviews.
+Table Reviews menyajikan informasi lengkap mengenai informasi Reviews dari para penonton film. Selain dapat mengetahui judul, user juga akan mendapatkan informasi tahun terbit sebuah film. Tidak hanya itu, akan ditampilkan pula nama sutradara hingga urutan nama aktor akan tersaji pada table ini. Berikut deskripsi lebih lanjut  untuk setiap tabel reviews.
 | Attribute                  | Type                  | Description                     		       |
 |:---------------------------|:----------------------|:------------------------------------------------|
 | id_user                    | integer 	    	     | Id User                       		       |
