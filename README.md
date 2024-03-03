@@ -84,7 +84,7 @@ Dokumentasi penggunaan aplikasi database. Anda dapat juga membuat dokumentasi li
 Menggambarkan struktur *primary key* **film**, **aktor**, **sutradara**, **reviews** dan **aktor-film** dengan masing-masing *foreign key* dalam membangun relasi antara tabel atau entitas.
 
 <p align="center" style="width: 800px; height: 200px;">
-  <img width="200" height="200" src="image/Skema  fix.png">
+  <img width="200" height="200" src="doc/skema.png">
 </p>
 
 
