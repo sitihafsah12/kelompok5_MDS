@@ -235,7 +235,7 @@ SELECT * FROM reviews;
 ```
 
 ## Tim Pengembang
-+ Database Manager : [Eka Dicky Darmawan Yanuari](https://github.com/EkaDickyDarmawanYanuari) (G1501231088)
-+ Frontend Developer : [Dwi Fitrianti](https://github.com/dwifitrianti) (G1501231013)
++ Database Manager : [Dwi Fitrianti](https://github.com/dwifitrianti) (G1501231013)
++ Frontend Developer : [Eka Dicky Darmawan Yanuari](https://github.com/EkaDickyDarmawanYanuari) (G1501231088)
 + Backend Developer : [Siti Hafsah](https://github.com/sitihafsah12) (G1501231060)
 + Technical Writer : [Reza Arianti](https://github.com/RezaArianti) (G1501231039)
