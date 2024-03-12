@@ -24,102 +24,122 @@ library(rvest)
     connectDB <- function(){
     driver <- dbDriver('PostgreSQL')
     # Set connection details
-    DB <- dbConnect(
+    db <- dbConnect(
       driver,
       dbname = "lzcyuguv",
       host = "topsy.db.elephantsql.com",
       user = "lzcyuguv",
       password = "klDSz8KVu4hTnXJHJhjsGgiisvH791kU"
     )
-    return(DB)
+    return(db)
+  }
+    
+    #-----------------------------------------------------------------------------#
+    # Query 2: Tabel reviews
+    q2 <- print(
+      "SELECT f.judul_film, u.nama_user, u.isi_user, u.tanggal_user, u.rating_user
+FROM film f
+JOIN reviews u ON f.id_film = u.id_film")
+    
+    
+    #-----------------------------------------------------------------------------#
+    # Query 3: Leaderboard film berdasarkan Banyaknya votes
+    q3 <- print(
+      "SELECT id_film, judul_film, votes
+  FROM film
+  ORDER BY votes DESC
+  LIMIT 10")
+    # Query 4: Leaderboard film berdasarkan Banyaknya rating
+    q4 <- print("SELECT id_film, judul_film, rating
+            FROM film
+            ORDER BY rating DESC
+            LIMIT 10")
+    
+    
+    #--------------------------Pembentukan Dataframe-------------------------------#
+    # Ubah dataset yang ditarik dari database menjadi bentuk Dataframe
+    DB <- connectDB()
+    tabel02 <- data.frame(dbGetQuery(DB, q2))
+    tabel03 <- data.frame(dbGetQuery(DB, q3))
+    tabel04 <- data.frame(dbGetQuery(DB, q4))
+    dbDisconnect(DB)
+    
+function(input, output, session) {
+  # Helper function untuk membangun query berdasarkan filter
+  generateQuery <- function(){
+    conditions <- list()
+    
+    if (!is.null(input$in_tahun) && length(input$in_tahun) == 2) {
+      conditions <- c(conditions, sprintf("tahun_rilis BETWEEN %d AND %d", input$in_tahun[1], input$in_tahun[2]))
+    }
+    
+    if (!is.null(input$in_rating) && length(input$in_rating) == 2) {
+      conditions <- c(conditions, sprintf("CAST(rating AS decimal) BETWEEN %d AND %d", input$in_rating[1], input$in_rating[2]))
+    }
+    
+    if (input$in_genre != '' && input$in_genre != 'All') {
+      conditions <- c(conditions, sprintf("genre_film = '%s'", input$in_genre))
+    }
+    
+    # Subquery untuk sutradara
+    if (input$in_sutradara != '' && input$in_sutradara != 'All') {
+      conditions <- c(conditions, sprintf("EXISTS (SELECT 1 FROM public.sutradara s WHERE s.id_film = film.id_film AND s.nama_sutradara = '%s')", input$in_sutradara))
+    }
+    
+    query <- "SELECT judul_film, durasi_film, COALESCE(votes,0) AS votes, a.nama_aktor FROM public.film f JOIN public.aktor a ON f.id_film = a.id_film"
+    if (length(conditions) > 0) {
+      query <- sprintf("%s WHERE %s", query, paste(conditions, collapse = " AND "))
+    }
+    
+    return(query)
   }
   
-  con <- connectDB()
-  
-  
-    film_query <- "SELECT id_film, id_sutradara, id_aktor, judul_film, tahun_rilis, durasi_film, genre_film, votes, rating FROM film"
-    aktor_query <- "SELECT id_film, id_aktor, nama_aktor FROM aktor"
-    reviews_query <- "SELECT id_user, id_film, nama_user, tanggal_user, isi_user, rating_user FROM reviews"
-    sutradara_query <- "SELECT id_film, id_sutradara, nama_sutradara, tahun_rilis FROM sutradara"
-    
-    film_data <- dbGetQuery(con, film_query)
-    aktor_data <- dbGetQuery(con, aktor_query)
-    reviews_data <- dbGetQuery(con, reviews_query)
-    sutradara_data <- dbGetQuery(con, sutradara_query)
-    
-    dbDisconnect(con)
-  
-
-function(input, output) {
+  # Menampilkan tabel film yang telah disaring atau semua film pada tampilan awal
+  output$out_tbl1 <- renderDataTable({
+    db <- connectDB()
+    query <- generateQuery()
+    movies <- dbGetQuery(db, query)
+    dbDisconnect(db)
+    datatable(movies, options = list(pageLength = 10, autoWidth = TRUE))
+  })
 
 #-------------------------Tab Cari-------------------------#  
     
-  # Filter Tahun
+  # Slider untuk tahun rilis
   output$filter_1 <- renderUI({
-    sliderInput(
-      inputId = "in_tahun",
-      label = "Pilih Tahun",
-      min = 2010,
-      max = 2024,
-      step = 1,
-      
-      value = c(2017, 2020),
-      sep = ''
-    )
+    sliderInput("in_tahun", "Tahun Rilis", min = 2000, max = 2024, value = c(2000, 2024))
   })
-  # Filter Rating
+  
+  # Slider untuk rating
   output$filter_2 <- renderUI({
-    sliderInput(
-      inputId = "in_rating",
-      label = "Rating Film",
-      min = 1,
-      max = 10,
-      step = 1,
-      
-      value = c(4, 7),
-      sep = ''
-    )
+    sliderInput("in_rating", "Rating Film", min = 1, max = 10, value = c(1, 10))
   })
-  # Filter Genre Film
+  
+  # Dropdown untuk genre
   output$filter_3 <- renderUI({
-    selectInput(
-      inputId = "in_genre",
-      label = "Pilih Genre Film",
-      multiple = TRUE,
-      choices = sort(as.character(film_data$genre_film))
-    )
+    db <- connectDB()
+    genres <- dbGetQuery(db, "SELECT DISTINCT genre_film FROM public.film ORDER BY genre_film")
+    dbDisconnect(db)
+    selectInput("in_genre", "Genre Film", choices = c('All' = 'All', setNames(genres$genre_film, genres$genre_film)), multiple = FALSE)
   })
-  # Filter Aktor Film
-  output$filter_4 <- renderUI({
-    selectInput(
-      inputId = "in_aktor",
-      label = "Aktor",
-      multiple = TRUE,
-      choices = sort(as.character(aktor_data$nama_aktor))
-    )
-  })
-  # Filter Sutradara Film
+  
+  # Dropdown untuk sutradara
   output$filter_5 <- renderUI({
-    selectInput(
-      inputId = "in_sutradara",
-      label = "Sutradara",
-      multiple = TRUE,
-      choices = sort(as.character(sutradara_data$nama_sutradara))
-    )
+    db <- connectDB()
+    directors <- dbGetQuery(db, "SELECT DISTINCT nama_sutradara FROM public.sutradara ORDER BY nama_sutradara")
+    dbDisconnect(db)
+    selectInput("in_sutradara", "Sutradara", choices = c('All' = 'All', setNames(directors$nama_sutradara, directors$nama_sutradara)), multiple = FALSE)
   })
-  # Definisi Data
-  data1 <- reactive({
-    film_data %>% filter(tahun_rilis >= input$in_tahun[1],
-                       tahun_rilis <= input$in_tahun[2],
-                       rating >= input$in_rating[1],
-                       rating <= input$in_rating[2],
-                       genre_film %in% input$in_genre)
-    aktor_data %>% filter(nama_aktor %in% input$in_aktor)
-    sutradara_data %>% filter(nama_sutradara %in% input$in_sutradara)
-  })
-  # Render Tabel Data
-  output$out_tbl1 <- renderDataTable({
-    data1()
+  
+  # Ketika filter berubah, update tabel
+  observe({
+    output$out_tbl1 <- renderDataTable({
+      db <- connectDB()
+      query <- generateQuery()
+      movies <- dbGetQuery(db, query)
+      dbDisconnect(db)
+      datatable(movies, options = list(pageLength = 10, autoWidth = TRUE))
+    })
   })
   
 #-------------------------Tab Review Film-------------------------#
@@ -128,19 +148,25 @@ function(input, output) {
   output$filter_6 <- renderUI({
     selectInput(
       inputId = "in_review",
-      label = "Masukkan ID Film",
+      label = "Masukkan judul Film",
       multiple = TRUE,
-      choices = sort(as.character(reviews_data$id_film))
+      choices = sort(as.character(tabel02$judul_film))
     )
   })
   # Definisi Data
   data2 <- reactive({
-    reviews_data %>% filter(id_film %in% input$in_review)
+    tabel02 %>% filter(judul_film %in% input$in_review)
   })
   # Render Tabel Data
   output$out_tbl2 <- renderDataTable({
     data2()
   })
+  
+  #----------------------Tab Statistik-------------------------#
+  # Render Tabel Data Leaderboard (Film berdasar votes)
+  output$out_tbl3 <- renderTable(tabel03)
+  # Render Tabel Data Leaderboard (Film berdasar rating)
+  output$out_tbl4 <- renderTable(tabel04)
   
 #-------------------------Tab Tentang-------------------------#
 
