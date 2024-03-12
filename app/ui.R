@@ -404,8 +404,8 @@ tabItem(
                 box(background = "warning",
                   tags$h3("Kami Di Balik INMOVIES"),
                   tags$br(),
-                  div(
-                    img(src = "MDS5.png", height =500, width = 888), style = "text-align: center;"),
+                  tags$div(
+                    img(src = "mds5.png", height = 500, width = 888), style = "text-align: center;"),
                   tags$br(),
                   width = 12
                   )),
