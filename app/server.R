@@ -86,7 +86,7 @@ function(input, output, session) {
       conditions <- c(conditions, sprintf("EXISTS (SELECT 1 FROM public.sutradara s WHERE s.id_film = film.id_film AND s.nama_sutradara = '%s')", input$in_sutradara))
     }
     
-    query <- "SELECT judul_film, durasi_film, COALESCE(votes,0) AS votes, a.nama_aktor FROM public.film f JOIN public.aktor a ON f.id_film = a.id_film"
+    query <- "SELECT judul_film, durasi_film, COALESCE(votes,0) AS votes FROM public.film"
     if (length(conditions) > 0) {
       query <- sprintf("%s WHERE %s", query, paste(conditions, collapse = " AND "))
     }
