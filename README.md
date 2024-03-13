@@ -63,7 +63,7 @@ Dunia film akan selalu menarik dan dinamis, tak heran para pecinta cinematografi
 
 ## Dashboard Database
 <p align="center">
-  <img width="850" height="500" src="doc/WhatsApp Image 2024-03-01 at 07.59.54_3991ab85.jpg">
+  <img width="850" height="500" src="doc/dashboard.jpg">
 </p>
 
 ## :dvd: Demo
