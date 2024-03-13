@@ -69,7 +69,7 @@ Dunia film akan selalu menarik dan dinamis, tak heran para pecinta cinematografi
 ## :dvd: Demo
 
 Berikut merupakan link untuk shinnyapps atau dashboard dari project kami:
-https://akmarinak98.shinyapps.io/database_publikasi_statistika/
+https://mds5.shinyapps.io/INMOVIES/ 
 
 ## :blue_book: Dokumentasi 
 
