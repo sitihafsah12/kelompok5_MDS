@@ -34,15 +34,14 @@ library(rvest)
     return(db)
   }
     
-    #-----------------------------------------------------------------------------#
+#------------------Membuat Query Tabel----------------------#
+    
     # Query 2: Tabel reviews
     q2 <- print(
       "SELECT f.judul_film, u.nama_user, u.isi_user, u.tanggal_user, u.rating_user
 FROM film f
 JOIN reviews u ON f.id_film = u.id_film")
     
-    
-    #-----------------------------------------------------------------------------#
     # Query 3: Leaderboard film berdasarkan Banyaknya votes
     q3 <- print(
       "SELECT id_film, judul_film, votes
@@ -56,13 +55,16 @@ JOIN reviews u ON f.id_film = u.id_film")
             LIMIT 10")
     
     
-    #--------------------------Pembentukan Dataframe-------------------------------#
+#--------------------------Pembentukan Dataframe-------------------------------#
+    
     # Ubah dataset yang ditarik dari database menjadi bentuk Dataframe
     DB <- connectDB()
     tabel02 <- data.frame(dbGetQuery(DB, q2))
     tabel03 <- data.frame(dbGetQuery(DB, q3))
     tabel04 <- data.frame(dbGetQuery(DB, q4))
     dbDisconnect(DB)
+   
+#------------------------------------------------------------------------------#
     
 function(input, output, session) {
   # Helper function untuk membangun query berdasarkan filter
@@ -110,12 +112,12 @@ function(input, output, session) {
     sliderInput("in_tahun", "Tahun Rilis", min = 2000, max = 2024, value = c(2000, 2024))
   })
   
-  # Slider untuk rating
+  # Slider untuk rating film
   output$filter_2 <- renderUI({
     sliderInput("in_rating", "Rating Film", min = 1, max = 10, value = c(1, 10))
   })
   
-  # Dropdown untuk genre
+  # Dropdown untuk genre film
   output$filter_3 <- renderUI({
     db <- connectDB()
     genres <- dbGetQuery(db, "SELECT DISTINCT genre_film FROM public.film ORDER BY genre_film")
@@ -123,7 +125,7 @@ function(input, output, session) {
     selectInput("in_genre", "Genre Film", choices = c('All' = 'All', setNames(genres$genre_film, genres$genre_film)), multiple = FALSE)
   })
   
-  # Dropdown untuk sutradara
+  # Dropdown untuk sutradara film
   output$filter_5 <- renderUI({
     db <- connectDB()
     directors <- dbGetQuery(db, "SELECT DISTINCT nama_sutradara FROM public.sutradara ORDER BY nama_sutradara")
@@ -131,7 +133,7 @@ function(input, output, session) {
     selectInput("in_sutradara", "Sutradara", choices = c('All' = 'All', setNames(directors$nama_sutradara, directors$nama_sutradara)), multiple = FALSE)
   })
   
-  # Ketika filter berubah, update tabel
+  # update tabel saat filter berubah
   observe({
     output$out_tbl1 <- renderDataTable({
       db <- connectDB()
@@ -144,7 +146,7 @@ function(input, output, session) {
   
 #-------------------------Tab Review Film-------------------------#
 
-  # Filter Genre Film
+  # Filter Judul Film
   output$filter_6 <- renderUI({
     selectInput(
       inputId = "in_review",
